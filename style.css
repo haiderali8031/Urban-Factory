@@ -1,0 +1,376 @@
+/*######## Defaults ######## */
+nav , header , footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+.section2Header h1 , .section3Header h1 {
+    font-family: 'Righteous', cursive;
+    color: saddlebrown;
+    text-align: center;
+}
+
+label {
+    font-family: 'Righteous', cursive;
+    color: saddlebrown;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 20px;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    padding-top:4%;
+    padding-bottom: 4%;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex: wrap ;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.33%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.33%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+/*###### Nav Bar ##########*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #FFF;
+    overflow: hidden;
+    margin: 0 ;
+    padding-bottom:0;
+}
+
+
+ul.topnav li {
+    font-family: 'Righteous', cursive;
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+} 
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 20px;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    color:darkblue;
+}
+
+ul.topnav li a:hover {
+    box-shadow: -2px -2px 3px 5px rgba(0,0,0,.15) , 2px 2px 4px 3px rgba(0,0,0,.1);
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+.rightside-col img {
+    border-radius: 7px;
+    box-shadow: 5px 5px 3px rgb(154, 159, 160);
+}
+
+/*###### Cuatom Styles #########*/
+
+#section-1-gradient , #section-3-gradient{
+  box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15);   
+  background: linear-gradient(#FFFFFF, #00FFFF);
+}
+
+.slopeIcon img {
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15) , 2px 2px 4px 2px rgba(0,0,0,1);
+    display: block;
+    margin: auto;
+}
+
+/*
+button {
+    font-size: 30px;
+    font-weight: 700;
+    color: saddlebrown;
+    background-color: #00FFFF;
+    display: block;
+    padding: 5px 20px ;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px; 
+    font-family: 'Righteous', cursive;
+   
+}
+
+button.learnMore {
+   display: block;
+    margin: auto;
+}
+*/
+.box button {
+    background-color: #00FFFF;
+    font-family:'Righteous', cursive;
+    padding: 5px;
+    margin: 20px;
+    font-size: 20px;
+    box-shadow:0 0 0 1px rgba(0,0,0,.15) , 0 2px 3px 0 rgba(0,0,0,.1); 
+}
+button:hover {
+    background-color: blueviolet;
+    color: #fff;
+    width: 200px;
+}
+
+div.box {
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,.15) , 0 2px 3px 0 rgba(0,0,0,.1); 
+}
+
+div.icon {
+    width: 100;
+}
+
+.icon img:hover {
+    transition-property: all;
+    transform-style: preserve-3d;
+    transition-duration: .20s;
+    box-shadow: -2px -2px 3px 5px rgba(0,0,0,.15) , 2px 2px 4px 3px rgba(0,0,0,.1);
+}
+
+.icon img {
+    border-radius: 19px; 
+}
+
+div.leftside-col {
+    margin-left:20%;
+}
+
+div.leftside-col h2 {
+    letter-spacing: 10px;
+    font-family: 'Righteous', cursive;
+    color: saddlebrown;
+    font-size: 20px;
+    line-height:10px;
+    padding-bottom: 40px;
+}
+
+div.rightside-col {
+    margin-left: 10%;
+}
+
+h1.larger {
+    font-family: 'Acme', sans-serif;
+    color: darkblue;
+    font-size: 50px;
+    margin: 0;
+    line-height:50px;
+}
+
+
+form h3 {
+    letter-spacing: 2px;
+    font-family: 'Righteous', cursive;
+    color: darkblue;
+}
+
+input[type="text"]{
+    background-color: floralwhite;
+    border: 20px yellow;
+    border-radius: 2px;
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 1px;
+}
+
+footer.footsy {
+    padding-left: 100px;
+    background-color: #666;
+}
+
+footer.footsy h1 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+}
+footer.footsy ul li {
+    color: yellow;
+    font-size: 20px;
+}
+
+footer.footsy ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+ footer.footsy p {
+    color: #fff;
+    padding-right: 20px; 
+}
+    
+.col-3 li {
+     text-decoration: none;
+    text-align: left;
+}
+
+div.bottom {
+    margin: 10px;
+    text-align: center;
+    
+}
+
+div.bottom h3 ,p {
+    line-height: 20px;
+    margin:5px;
+}
+
+/*######## Mobile Responsive ######*/
+
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)) {
+        display: none ;
+    }
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.respinsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    div.leftside-col h2 {
+        letter-spacing: 0px;
+    }
+    
+    article p {
+        font-size: 15px;
+    }
+    
+    
+    .col-6,
+    .col-7,
+    .col-5,
+    .col-4 {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .col-3 {
+        width: 50;
+        margin: 10px;
+    }
+    footer.footsy h1 {
+        font-size: 20px;
+    }
+    footer.footsy ul li {
+        font-size: 15px;
+    }
+    footer.footsy {
+        padding-left: 0;
+        
+    }
+    div.mobileStack {
+        display: block;
+        width: 50%;
+    }
+    
+    footer.footsy {
+        width: 100%;
+    }
+    
+    div.box  {
+        padding: 5px;
+        display: block;
+        width: 100%;
+        padding: 120px;
+        
+    }
+    
+    div.box img {
+        width: 50%;
+        
+    }
+    
+     div.slopeIcon {
+        width: 100%;
+    }
+    
+    div.slopeIcon img {
+        width: 90%;
+        margin: 10px;
+    }
+    
+    div.leftside-col,
+    div.rightside-col {
+        margin: 15px;
+    }
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    button {
+        width: auto;
+    }
+   
+}
